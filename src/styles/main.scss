@@ -1,0 +1,21 @@
+
+
+@use 'colors';
+@use 'buttons';
+@use 'socials';
+@use 'hero';
+
+body {
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden; // removes horizontal bar for the hero bg
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+
