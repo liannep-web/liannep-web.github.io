@@ -15,6 +15,7 @@ import icon99 from '../assets/icons/icon-99d.svg';
 import iconBehance from '../assets/icons/icon-behance.svg';
 import iconLinkedin from '../assets/icons/icon-linkedin.svg';
 import bgImage from '../assets/hero-background.png';
+import svcImage from '../assets/services-image-v3_800x510.jpg';
 
 
 function loadImages() {
@@ -29,6 +30,7 @@ function loadImages() {
     document.querySelector('.js-icon-behance-image').src = iconBehance
     document.querySelector('.js-icon-linkedin-image').src = iconLinkedin
     document.querySelector('.js-bg-image').src = bgImage
+    document.querySelector('.js-svc-image').src = svcImage
 }
 
 

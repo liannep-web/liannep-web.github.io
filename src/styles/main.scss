@@ -1,21 +1,38 @@
 
-
 @use 'colors';
 @use 'buttons';
 @use 'socials';
 @use 'hero';
+@use 'services';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 body {
     box-sizing: border-box;
-    background-color: var(--bg-color);
+    background-color: var(--bs-wite);
 
     margin: 0;
     padding: 0;
 
-    overflow: hidden; // removes horizontal bar for the hero bg
+    overflow-x: hidden; // removes horizontal bar for the hero bg
 
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     position: relative;
+
+    .sr-only {
+        font-size: 0;
+    }
+
+    section {
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }
 

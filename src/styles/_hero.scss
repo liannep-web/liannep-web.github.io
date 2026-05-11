@@ -15,9 +15,15 @@ header {
         z-index: 1;
     }
 
-    #startChange {
+    #startChange,
+    nav {
         z-index: 2;
         position: relative;
+    }
+
+    #startChange {
+        display: flex;
+        flex-direction: row;
     }
 
     .name, .title, .short-desc {
@@ -49,6 +55,49 @@ header {
         letter-spacing: 0.25rem;
         margin-bottom: 3rem;
     }
+
+
+    /*--------- NAVIGATION ---------*/
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-nav {
+
+        display: inline-block;
+        line-height: 1;
+
+        .collapse {
+            justify-content: center;
+        }
+
+        .nav-link {
+            color: var(--bs-white);
+            text-transform: uppercase;
+
+            font-size: 3.5rem;
+            /* font-weight: 600; */
+            font-variation-settings: "wght" 800, "wdth" 125;
+            /* font-stretch: 125%; */
+            color: var(--white-color);
+            text-decoration: none;
+            letter-spacing: 1rem;
+            transition: .4s;
+
+            -webkit-text-stroke: 1px;
+            -webkit-text-stroke-color: #6D81AB;
+            color: #22252b;
+
+            &:hover {
+                font-variation-settings: "wght" 400, "wdth" 100;
+                letter-spacing: .35rem;
+                /* font-stretch: 100%; */
+            }
+        }
+    }
+    
+
     
 
 }
