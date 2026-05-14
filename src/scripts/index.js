@@ -8,6 +8,8 @@ import 'bootstrap/js/dist/dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/main.scss';
 
+import { updateCarousel, createScrollIndicator, handleSwipe } from './cardCarousel';
+
 
 // Lianne Dev Env IMAGES
 import myLogo from '../assets/icons/li_2024-logo1.svg';
@@ -15,7 +17,7 @@ import icon99 from '../assets/icons/icon-99d.svg';
 import iconBehance from '../assets/icons/icon-behance.svg';
 import iconLinkedin from '../assets/icons/icon-linkedin.svg';
 import bgImage from '../assets/hero-background.png';
-import svcImage from '../assets/services-image-v3_800x510.jpg';
+import svcImage from '../assets/services-image-v4_4000x2120.png';
 
 
 function loadImages() {
@@ -35,4 +37,4 @@ function loadImages() {
 
 
 loadImages()
-
+// updateCarousel()
