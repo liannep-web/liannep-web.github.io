@@ -72,6 +72,9 @@ header nav,
 
 .logo {
     margin-bottom: 3rem;
+
+    max-width: 60px;
+    width: 100%;
 }
 
 h1 {
@@ -89,7 +92,7 @@ h1 {
     line-height: 1;
 }
 .name {
-    font-size: 3.2rem;
+    font-size: 4rem;
     font-weight: 700;
     letter-spacing: .5rem;
 }
