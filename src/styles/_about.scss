@@ -1,0 +1,54 @@
+.about-section {
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    .greeting {
+        margin-bottom: 3rem;
+
+        h3 {
+            font-size: 3.2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .profile {
+        margin-bottom: 3rem;
+
+        .profile-image {
+            max-width: 380px;
+            width: 100%;
+        }
+
+        .profile-copy {
+            .btn {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .skills-container {
+        margin-bottom: 3rem;
+
+        .fe-be-container {
+            margin-bottom: 3rem;
+        }
+        .graphics-cms-pm-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        img {
+            height: 75px;
+        }
+
+    }
+}

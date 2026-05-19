@@ -23,6 +23,19 @@ module.exports = {
         compress: true
     },
     devtool: 'source-map',
+    plugins: [
+        new HTMLWebpackPlugin({ // Create new whenever a page is added
+            title: 'Lianne Perol | Dev Env',
+            filename: 'index.html',
+            template: path.resolve(__dirname, 'src/template.html'),
+            inject: 'body',
+        }),
+        new HTMLWebpackPlugin({ 
+            title: 'About Page',
+            filename: 'about.html',
+            template: path.resolve(__dirname, 'src/about.html')
+        }),
+    ],
     module: {
         rules: [
             {
@@ -80,18 +93,7 @@ module.exports = {
             },
         ]
     },
-    plugins: [
-        new HTMLWebpackPlugin({ // Create new whenever a page is added
-            title: 'Lianne Perol | Dev Env',
-            filename: 'index.html',
-            template: path.resolve(__dirname, 'src/template.html')
-        }),
-        new HTMLWebpackPlugin({ 
-            title: 'About Page',
-            filename: 'about.html',
-            template: path.resolve(__dirname, 'src/about.html')
-        }),
-    ],
+    
 
     
 

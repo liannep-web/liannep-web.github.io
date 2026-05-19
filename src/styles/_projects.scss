@@ -1,22 +1,8 @@
 .projects-section {
-    .heading {
 
-        margin-bottom: 2rem;
-
-        h2 {
-            text-transform: uppercase;
-            font-size: 3.5rem;
-            /* font-weight: 600; */
-            font-variation-settings: "wght" 800, "wdth" 125;
-            /* font-stretch: 125%; */
-            color: var(--white-color);
-            text-decoration: none;
-            letter-spacing: 1rem;
-            transition: 0.4s;
-            -webkit-text-stroke: 1px;
-            -webkit-text-stroke-color: #6D81AB;
-            color: var(--bs-white);
-        }
+    .container {
+        position: relative;
+        z-index: 2;    
     }
 
     .carousel-row {
@@ -27,6 +13,9 @@
         // gap: 60px;
         align-items: center;
         justify-content: center;
+
+        margin-top: -4rem;
+        z-index: 1;
 
         .carousel-container {
             display: flex;
@@ -49,6 +38,7 @@
                 align-items: center;
 
                 .nav-arrow {
+                    display: inline-block;
                     position: absolute;
                     left: 0;
 

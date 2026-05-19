@@ -61,7 +61,8 @@ header {
     .nav-container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-left: 5rem;
     }
     .navbar-nav {
 
