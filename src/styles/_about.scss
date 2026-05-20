@@ -1,13 +1,20 @@
 .about-section {
 
+    .container {
+        margin-bottom: 3rem;
+    }
+
     h3 {
         text-transform: uppercase;
-        font-size: 1.125rem;
+        font-size: 1.5rem;
         font-weight: 600;
         margin-bottom: 2rem;
     }
     .greeting {
-        margin-bottom: 3rem;
+
+        h3, p {
+            margin-bottom: 0;
+        }
 
         h3 {
             font-size: 3.2rem;
@@ -49,6 +56,81 @@
         img {
             height: 75px;
         }
+
+    }
+
+    .accordion {
+
+        .accordion-item {
+            margin-bottom: 1em;
+            border: 1px solid #22252B !important;
+            border-radius: 1rem !important;
+            overflow: hidden;
+
+            .accordion-button {
+
+                justify-content: space-between;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: #22252B;
+
+                .position-company {
+                    width: 75%;
+
+                    .position {
+                        color: var(--primary-color);
+                    }
+                }
+                .timeline {
+                    width: 25%;
+                    padding-right: 1rem;
+                }
+
+                &[aria-expanded="true"] {
+                    border-bottom: 1px solid #22252B;
+                }
+                
+                &:not(.collapsed) {
+                    background-color: transparent;
+                }
+
+                &:focus {
+                    box-shadow: 0 0 0.25rem rgba(34, 37, 43, 0.25);
+                }
+
+                &:after {
+                    filter: brightness(0) saturate(100%) invert(33%) sepia(16%) saturate(6093%) hue-rotate(321deg) brightness(105%) contrast(102%);
+                }
+            }
+
+            .location-link {
+                display: flex;
+                margin-bottom: 1rem;
+                font-weight: 600;
+
+                .location {
+                    margin-right: 2rem;
+                }
+                .link {
+                    color: inherit;
+                }
+            }
+
+            span.skill {
+                font-weight: 600;
+                color: var(--bs-white);
+                background-color: var(--bs-gray);
+                padding: .5rem 1rem;
+                border-radius: 1rem;
+                margin-right: .75rem;
+                font-size: .75rem;
+            }
+
+        }
+        
+        
+
+        
 
     }
 }

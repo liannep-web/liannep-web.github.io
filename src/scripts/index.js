@@ -1,9 +1,12 @@
 
-import 'bootstrap';
+// import 'bootstrap';
 // Or import specific plugins
-import 'bootstrap/js/dist/util';
-import 'bootstrap/js/dist/dropdown';
-import 'bootstrap/dist/js/bootstrap.min.js';
+// import 'bootstrap/js/dist/util';
+// import 'bootstrap/js/dist/dropdown';
+// import 'bootstrap/js/dist/collapse.js';
+
+// import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 // import '../styles/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -42,16 +45,25 @@ import iconShopify from '../assets/icons/icon_shopify-75x75.svg';
 import iconDuda from '../assets/icons/icon_duda-95x75.svg';
 import iconJira from '../assets/icons/icon_jira-75x75.svg';
 import iconMonday from '../assets/icons/icon_monday-250x75.svg';
-
-
+import iconLocation from '../assets/icons/icon-location.svg';
+import iconLink from '../assets/icons/icon-link.svg';
 
 
 function loadImages() {
     let logos = document.querySelectorAll('.js-logo-image');
+    let locations = document.querySelectorAll('.js-location-icon');
+    let links = document.querySelectorAll('.js-link-icon');
 
-    // console.log(logos);
     logos.forEach(logo => { // Loop for multiple image uses
         logo.src = myLogo;
+    });
+
+    locations.forEach(loc => { // Loop for multiple image uses
+        loc.src = iconLocation;
+    });
+
+    links.forEach(link => { // Loop for multiple image uses
+        link.src = iconLink;
     });
     
     document.querySelector('.js-icon-99-icon').src = icon99
@@ -81,8 +93,14 @@ function loadImages() {
     document.querySelector('.js-jira-icon').src = iconJira
     document.querySelector('.js-monday-icon').src = iconMonday
 
+
 }
 
 
+// function accordionCollapse() {
+//     const collapseElementList = document.querySelectorAll('.collapse')
+//     const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+// }
+
 loadImages()
-// updateCarousel()
+// accordionCollapse()
