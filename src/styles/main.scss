@@ -6,6 +6,8 @@
 @use 'services';
 @use 'projects';
 @use 'about';
+@use 'contact';
+@use 'footer';
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -38,6 +40,14 @@ body {
         }
     }
 
+    .bg-image {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 1;
+    }
+
     .heading {
 
         h2 {
@@ -58,10 +68,55 @@ body {
 
     p {
         font-weight: 400;
+
+        &:last-of-type,
+        &:last-child {
+            margin-bottom: 2rem;
+        }
+
+        &.name,
+        &.title, 
+        &.short-desc {
+            color: var(--bs-white);
+        }
+        
+        &.name, 
+        &.title {
+            text-transform: uppercase;
+        }
+
+        &.name {
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: .45rem;
+            line-height: 1.2;
+        }
+
+        &.title {
+            font-size: 1.25rem;
+            letter-spacing: .5rem;
+            margin-bottom: 3rem;
+            line-height: 1.25;
+        }
+
+        &.short-desc {
+            letter-spacing: 0.25rem;
+            margin-bottom: 3rem;
+        }
+        
     }
 
-    p:last-of-type {
-        margin-bottom: 2rem;
+    .logo-image {
+        margin-bottom: 3rem;
     }
+
+    ul {
+        &:last-child {
+            margin-bottom: 2rem;
+        }
+    }
+
+
+    
 }
 

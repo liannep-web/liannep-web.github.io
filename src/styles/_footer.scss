@@ -1,0 +1,12 @@
+footer {
+    background-color: var(--dark-bg-color);
+    font-size: .8em;
+    padding: 4rem;
+
+    p, a {
+        color: var(--light-grey);
+        text-transform: initial;
+        transition: .4s;
+        margin-bottom: .5rem !important;
+    }
+}

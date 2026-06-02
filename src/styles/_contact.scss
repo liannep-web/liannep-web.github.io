@@ -1,0 +1,64 @@
+.contact-section {
+    height: 550px;
+    // display: flex;
+    // align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    .container {
+        z-index: 1;
+        position: relative;
+
+        .heading {
+            h2 {
+                color: var(--dark-bg-color);
+                margin-bottom: 5rem;
+            }
+        }
+
+        .name-position-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5rem;
+
+            .logo-image, 
+            .title {
+                margin-bottom: 0;
+            }
+
+            .logo-image {
+                margin-right: 1.5rem;
+            }
+
+            .name {
+                font-size: 1.5rem;
+                margin-bottom: .5rem;
+            }
+            .title {
+                font-size: .875rem;
+            }
+        }
+
+        .lets-talk {
+            h2, p {
+                color: var(--bs-white);
+            }
+            h2 {
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: 700;
+                letter-spacing: 0.45rem;
+            }
+            p {
+                font-size: 1.2rem;
+                margin-bottom: .5rem;
+
+            }
+            a {
+                color: var(--primary-color);
+                font-weight: 600;
+            }
+        }
+    }
+}
