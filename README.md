@@ -10,3 +10,4 @@ Sample Boilerplate with (some) WF Components Boilerplate is from https://github.
 - 5/12/26 added/created services section
 - 5/14/26 added/created projects section - carousel raw
 - 5/19/26 added about section, tablist js, modified webpack to inject js inside body tag
+- 6/2/26 added contact section, footer. Updated about and projects info. Styling updates
